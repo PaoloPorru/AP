@@ -1,0 +1,219 @@
+<%- include('layout', { body: `
+  <section class="hero">
+    <div class="hero-media">
+      <!-- Sostituisci video.mp4 con il tuo video -->
+      <video class="hero-video" src="/static/video/hero-test.mp4" autoplay muted loop playsinline></video>
+      <div class="hero-overlay">
+        <h1 class="headline">Collezioni <em>Moda</em></h1>
+        <p class="tagline">Moda contemporanea tra sartoriale e ricerca.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram">
+    <div class="section-head">
+      <h2>Ultimi post da Instagram</h2>
+      <a class="btn-outline" href="#" target="_blank" rel="noopener">Segui su Instagram</a>
+    </div>
+    <div class="instagram-grid">
+      <style>
+        .instagram-feed {
+          width: 100%;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .post {
+          border-bottom: 1px solid #eee;
+        }
+
+        .post-header {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+        }
+
+        .profile-pic {
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .username {
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+        .post img {
+          max-width: 100%;
+          padding: 10px;
+          display: block;
+        }
+
+        .post-actions {
+          display: flex;
+          padding: 5px 10px;
+          gap: 15px;
+        }
+
+        .action-icon {
+          width: 20px;
+          height: 20px;
+          border: 1px solid #333;
+          border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+        }
+
+        /* Cuore stilizzato */
+        .action-icon.like::after {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          width: 12px;
+          height: 12px;
+          background-color: red;
+          clip-path: polygon(50% 0%, 61% 11%, 75% 11%, 84% 20%, 84% 32%, 75% 43%, 50% 65%, 25% 43%, 16% 32%, 16% 20%, 25% 11%, 39% 11%);
+        }
+
+        /* Commento stilizzato */
+        .action-icon.comment::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 10px;
+          height: 10px;
+          border: 2px solid #333;
+          border-radius: 50%;
+        }
+
+        /* Condivisione stilizzata */
+        .action-icon.share::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 8px;
+          width: 4px;
+          height: 10px;
+          background-color: #333;
+          transform: rotate(45deg);
+        }
+
+        .caption {
+          padding: 0 10px 10px 10px;
+          font-size: 14px;
+        }
+
+        /* Layout a griglia per i post */
+        .instagram-feed {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          padding: 10px;
+        }
+
+        .post {
+          border: none;
+          box-shadow: none;
+        }
+      </style>
+
+      <div class="instagram-feed">
+        <!-- Post 1 -->
+        <div class="post">
+          <div class="post-header">
+            <img class="profile-pic" src="https://picsum.photos/id/1005/50/50" alt="Profile Pic">
+            <div class="username">annaastudioo</div>
+          </div>
+          <img src="https://picsum.photos/id/1015/350/350" alt="Post Image 1">
+          <div class="post-actions">
+            <div class="action-icon like"></div>
+            <div class="action-icon comment"></div>
+            <div class="action-icon share"></div>
+          </div>
+          <div class="caption"><strong>annaastudioo</strong> Questo è il primo post simulato!</div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+          <div class="post-header">
+            <img class="profile-pic" src="https://picsum.photos/id/1005/50/50" alt="Profile Pic">
+            <div class="username">annaastudioo</div>
+          </div>
+          <img src="https://picsum.photos/id/1025/350/350" alt="Post Image 2">
+          <div class="post-actions">
+            <div class="action-icon like"></div>
+            <div class="action-icon comment"></div>
+            <div class="action-icon share"></div>
+          </div>
+          <div class="caption"><strong>annaastudioo</strong> Ecco un secondo post per simulare il feed.</div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post">
+          <div class="post-header">
+            <img class="profile-pic" src="https://picsum.photos/id/1005/50/50" alt="Profile Pic">
+            <div class="username">annaastudioo</div>
+          </div>
+          <img src="https://picsum.photos/id/1035/350/350" alt="Post Image 3">
+          <div class="post-actions">
+            <div class="action-icon like"></div>
+            <div class="action-icon comment"></div>
+            <div class="action-icon share"></div>
+          </div>
+          <div class="caption"><strong>annaastudioo</strong> Un altro post per completare il feed simulato.</div>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="post">
+          <div class="post-header">
+            <img class="profile-pic" src="https://picsum.photos/id/1005/50/50" alt="Profile Pic">
+            <div class="username">annaastudioo</div>
+          </div>
+          <img src="https://picsum.photos/id/1045/350/350" alt="Post Image 4">
+          <div class="post-actions">
+            <div class="action-icon like"></div>
+            <div class="action-icon comment"></div>
+            <div class="action-icon share"></div>
+          </div>
+          <div class="caption"><strong>annaastudioo</strong> Un altro post per completare il feed simulato.</div>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="post">
+          <div class="post-header">
+            <img class="profile-pic" src="https://picsum.photos/id/1005/50/50" alt="Profile Pic">
+            <div class="username">annaastudioo</div>
+          </div>
+          <img src="https://picsum.photos/id/1055/350/350" alt="Post Image 5">
+          <div class="post-actions">
+            <div class="action-icon like"></div>
+            <div class="action-icon comment"></div>
+            <div class="action-icon share"></div>
+          </div>
+          <div class="caption"><strong>annaastudioo</strong> Un altro post per completare il feed simulato.</div>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="post">
+          <div class="post-header">
+            <img class="profile-pic" src="https://picsum.photos/id/1005/50/50" alt="Profile Pic">
+            <div class="username">annaastudioo</div>
+          </div>
+          <img src="https://picsum.photos/id/1065/350/350" alt="Post Image 6">
+          <div class="post-actions">
+            <div class="action-icon like"></div>
+            <div class="action-icon comment"></div>
+            <div class="action-icon share"></div>
+          </div>
+          <div class="caption"><strong>annaastudioo</strong> Un altro post per completare il feed simulato.</div>
+        </div>
+      </div>
+    </div>
+    <!-- TODO: integra API Instagram Basic Display o uno snippet embed ufficiale -->
+  </section>
+`}) %>

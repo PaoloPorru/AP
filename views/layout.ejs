@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>ΛNNΛ - <%= title %></title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/img/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/static/img/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/img/logo.png">
+
+  <meta name="description" content="Portfolio moda contemporanea, luxury, prêt-à-porter e couture.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+
+  <!-- Bootstrap JS + Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script defer src="/static/js/main.js"></script>
+</head>
+<body>
+  <%- include('partials/header'); %>
+  <main id="main" class="container">
+    <%- body %>
+  </main>
+  <%- include('partials/footer'); %>
+</body>
+</html>

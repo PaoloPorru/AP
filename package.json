@@ -1,0 +1,27 @@
+{
+  "name": "stilista-luxury-site",
+  "version": "1.0.0",
+  "description": "Sito portfolio fashion & luxury - Node + Express + EJS, mobile-first",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "keywords": [
+    "fashion",
+    "luxury",
+    "portfolio",
+    "node",
+    "express",
+    "ejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  }
+}

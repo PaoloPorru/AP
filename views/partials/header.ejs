@@ -1,0 +1,49 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg" role="navigation" id="primary-nav">
+    <div class="container-fluid">
+
+      <!-- Brand -->
+      <a href="/" class="navbar-brand" aria-label="homepage">
+        <img class="logo" src="/static/img/logo.png" alt="ΛNNΛ" />
+      </a>
+
+      <!-- Bottone hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenuto collapsabile -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <% nav.forEach(item=> { %>
+            <li class="nav-item <%= (item.href === currentPath) ? 'active' : '' %>">
+              <a class="nav-link" href="<%= item.href %>">
+                <%= item.label %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="row social-icons" aria-label="Social links">
+          <div class="col-auto social-icon">
+            <a href="https://maps.google.com/?cid=12803584184418226300" target="_blank" rel="noreferrer noopener" 
+               class="social-link" aria-label="Google Places">
+              <img src="https://static.wixstatic.com/media/390db90c2cec42d58bd3203fc21fe12e.png" 
+                   alt="Google Places" class="social-img" />
+            </a>
+          </div>
+          <div class="col-auto social-icon">
+            <a href="https://www.instagram.com/annaastudioo/" target="_blank" 
+               rel="noreferrer noopener" class="social-link" aria-label="Instagram">
+              <img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png" 
+                   alt="Instagram" class="social-img" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</header>
