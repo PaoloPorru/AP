@@ -109,12 +109,13 @@
         }
 
         /* Layout a griglia per i post */
-        .instagram-feed {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 10px;
-          padding: 10px;
-        }
+          .instagram-feed {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 10px;
+          }
+
 
         .post {
           border: none;

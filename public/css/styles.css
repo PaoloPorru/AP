@@ -508,3 +508,47 @@ video {
     object-fit: cover;
     display: block;
   }
+
+
+  .hero-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 600px) {
+  .headline {
+    font-size: 24px;
+  }
+  .tagline {
+    font-size: 14px;
+  }
+  .caption {
+    font-size: 12px;
+  }
+}
+.post-actions {
+  padding: 5px;
+  gap: 8px;
+}
+.post-header {
+  padding: 5px;
+}
+@media (max-width: 600px) {
+  .instagram-feed {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  .post {
+    flex: 0 0 70%;
+  }
+}
