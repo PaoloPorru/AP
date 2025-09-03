@@ -1,27 +1,32 @@
 {
-  "name": "stilista-luxury-site",
+  "name": "stilista-site",
+  "private": true,
   "version": "1.0.0",
-  "description": "Sito portfolio fashion & luxury - Node + Express + EJS, mobile-first",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "NODE_ENV=development node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "studio": "next dev -p 3333"
   },
-  "keywords": [
-    "fashion",
-    "luxury",
-    "portfolio",
-    "node",
-    "express",
-    "ejs"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "compression": "^1.7.4",
-    "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "helmet": "^7.1.0",
-    "morgan": "^1.10.0"
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.7",
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.38",
+    "lucide-react": "0.452.0",
+    "@sanity/client": "6.18.2",
+    "next-sanity": "9.4.9",
+    "sanity": "3.57.2",
+    "zod": "3.23.8",
+    "clsx": "2.1.1",
+    "swiper": "11.1.4"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "typescript": "5.5.4"
   }
 }

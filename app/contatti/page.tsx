@@ -1,0 +1,1 @@
+export default function Contatti(){return (<section className='container section'><h1 className='h1 mb-6'>Contatti</h1><p>Scrivimi su <a className='underline' href='mailto:info@anna.example'>info@anna.example</a></p></section>)}

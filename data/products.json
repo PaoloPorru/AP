@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "abito-sera-aurora",
+    "name": "Abito Sera Aurora",
+    "price": 420,
+    "images": [
+      "/hero/aurora1.jpg",
+      "/hero/aurora2.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Nero",
+        "hex": "#0a0a0a"
+      },
+      {
+        "name": "Cipria",
+        "hex": "#f4d4c2"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "collection": "Runway 25",
+    "tags": [
+      "nuova-collezione",
+      "sera"
+    ]
+  },
+  {
+    "slug": "tailleur-lino-luce",
+    "name": "Tailleur Lino Luce",
+    "price": 320,
+    "images": [
+      "/hero/luce1.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Ecru",
+        "hex": "#f0e9df"
+      },
+      {
+        "name": "Blu Notte",
+        "hex": "#0b1b34"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "collection": "Atelier Icons",
+    "tags": [
+      "daywear"
+    ]
+  }
+]

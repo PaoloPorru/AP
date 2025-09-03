@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "runway-25",
+    "name": "Runway 25",
+    "description": "Selezione di capi artigianali presentati in passerella.",
+    "hero": {
+      "type": "video",
+      "src": "/video/runway25.mp4",
+      "poster": "/hero/runway25.jpg"
+    },
+    "products": [
+      "abito-sera-aurora"
+    ]
+  },
+  {
+    "slug": "atelier-icons",
+    "name": "Atelier Icons",
+    "description": "I nostri best-seller reinterpretati.",
+    "hero": {
+      "type": "image",
+      "src": "/hero/icons.jpg"
+    },
+    "products": [
+      "tailleur-lino-luce"
+    ]
+  }
+]

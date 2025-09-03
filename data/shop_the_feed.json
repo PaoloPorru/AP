@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ig1",
+    "caption": "Nuova capsule!",
+    "image": "/feed/feed1.jpg",
+    "productSlug": "abito-sera-aurora",
+    "price": 420,
+    "colors": [
+      {
+        "name": "Nero",
+        "hex": "#0a0a0a"
+      },
+      {
+        "name": "Cipria",
+        "hex": "#f4d4c2"
+      }
+    ]
+  },
+  {
+    "id": "ig2",
+    "caption": "Dettagli di lavorazione",
+    "image": "/feed/feed2.jpg",
+    "productSlug": "tailleur-lino-luce",
+    "price": 320,
+    "colors": [
+      {
+        "name": "Ecru",
+        "hex": "#f0e9df"
+      },
+      {
+        "name": "Blu Notte",
+        "hex": "#0b1b34"
+      }
+    ]
+  }
+]
