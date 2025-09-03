@@ -18,8 +18,8 @@
     "postcss": "8.4.38",
     "lucide-react": "0.452.0",
     "@sanity/client": "6.18.2",
-    "next-sanity": "9.4.9",
-    "sanity": "3.57.2",
+    "sanity": "^3.99.0",
+    "next-sanity": "^9.12.3",
     "zod": "3.23.8",
     "clsx": "2.1.1",
     "swiper": "11.1.4"
